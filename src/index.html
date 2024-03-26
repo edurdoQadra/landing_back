@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Concurso</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="max-w-md mx-auto">
+
+        <h1 class="text-3xl mb-5 font-bold underline text-center">
+            Landing Concurso
+        </h1>
+        <div class="bg-white rounded-lg shadow-md p-6">
+           
+            
+            <div class="max-w-md mx-auto">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-4">Registration Form</h2>
+                    <form id="registerForm" method="post" class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" >
+                             
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" >
+                                  
+                        </div>
+                        <div>
+                            <label for="password" class="block mb-1">Password</label>
+                            <input type="password" id="password" name="password"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" >
+                                 
+                        </div>
+                        <div>
+                            <label for="confirmPassword" class="block mb-1">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" >
+                                <div class="alert_confirm_pass">
+
+                                </div>    
+                        </div>
+                        <div>
+                            <label class="block mb-1">Document Type</label>
+                            <select name="documentType" id="documentType"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" >
+                                <option value="">Seleccione un tipo</option>
+                                <option value="DNI">DNI</option>
+                                <option value="Passport">Passport</option>
+                                <option value="License">License</option>
+                            </select>
+                          
+                        </div>
+                        <div>
+                            <label for="documentNumber" class="block mb-1">Document Number</label>
+                            <input type="text" id="documentNumber" name="documentNumber"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" >
+                                
+                        </div>
+                        <div>
+                            <input type="checkbox" id="over18" name="over18" class="mr-2" >
+                            <label for="over18" class="inline-block mb-1">I am over 18 years old</label>
+                            
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:bg-blue-600">Register
+                        </button>
+
+                        <div class="alerts">
+
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./assets/js/app.js"></script>
+</body>
+
+</html>
